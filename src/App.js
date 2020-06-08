@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 
 import store from './redux/store'
 import CakeContainer from './components/CakeContainer';
+import IceCreamContainer from './components/IceCreamContainer';
 
 // Specifying the store as a prop
 // We provide store at the top of the application because it will provide store to every component in the application.
@@ -14,6 +15,7 @@ const App = () => {
     <Provider store={store}>    
       <div className="App">
         <CakeContainer />
+        <IceCreamContainer />
       </div>
     </Provider>
   );
