@@ -1,10 +1,10 @@
 import { BUY_ICECREAM } from './iceCreamTypes'
 
 const initialState = {
-    numOfIceCreams: 10
+    numOfIceCreams: 20
 }
 
-const cakeReducer = (state = initialState, action) =>{
+const iceCreamReducer = (state = initialState, action) =>{
     switch (action.type) {
         case BUY_ICECREAM: return {
             numOfIceCreams: state.numOfIceCreams-1
@@ -13,4 +13,4 @@ const cakeReducer = (state = initialState, action) =>{
     }
 }
 
-export default cakeReducer;
+export default iceCreamReducer;

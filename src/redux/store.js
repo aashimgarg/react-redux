@@ -1,11 +1,11 @@
 import { createStore } from 'redux';
-import cakeReducer from './cakes/cakeReducers'
+import rootReducer from './rootReducer'
 
 // Using the ES6 import syntax
 
-const store = createStore(cakeReducer);
+const store = createStore(rootReducer);
 
 // createStore method accepts a reducer function as its parametre.
-// For this we have cakeReducer so we have passed it as a parametre 
+// For this we have rootReducer so we have passed it as a parametre 
 
 export default store

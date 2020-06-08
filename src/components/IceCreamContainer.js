@@ -4,7 +4,7 @@ import { useSelector,useDispatch } from 'react-redux';
 
 const IceCreamContainer = () => {
 
-    const numOfIceCreams = useSelector( state => state.numOfIceCreams)
+    const numOfIceCreams = useSelector( state => state.iceCream.numOfIceCreams)
     const dispatch = useDispatch()
     return (
         <div>
